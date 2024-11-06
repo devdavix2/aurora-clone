@@ -1,0 +1,35 @@
+@font-face {
+  font-family: CircularXXSub;
+  font-weight: 500;
+  src: url("/fonts/circular-CircularXXSub-Medium.woff2") format("woff2"),
+    url("/fonts/circular-CircularXXSub-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: CircularXXSub;
+  font-weight: 400;
+  src: url("/fonts/circular-CircularXXSub-Book.woff2") format("woff2"),
+    url("/fonts/circular-CircularXXSub-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: CircularXXSub;
+  font-weight: 700;
+  src: url("/fonts/circular-CircularXXSub-Bold.woff2") format("woff2"),
+    url("/fonts/circular-CircularXXSub-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: CircularXXSub;
+  font-weight: 400;
+  font-style: italic;
+  src: url("/fonts/circular-CircularXXSub-BookItalic.woff2") format("woff2"),
+    url("/fonts/circular-CircularXXSub-BookItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: CircularXXSub;
+  font-weight: 900;
+  src: url("/fonts/circular-CircularXXSub-Black.woff2") format("woff2"),
+    url("/fonts/circular-CircularXXSub-Black.woff") format("woff");
+}
