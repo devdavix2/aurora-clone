@@ -1,25 +1,13 @@
 "use client";
 import styles from "../app/page.module.css";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
-const FaTwitter = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaTwitter),
-  { ssr: false }
-);
-const FaTwitch = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaTwitch),
-  { ssr: false }
-);
-const FaYoutube = dynamic(
-  () => import("react-icons/fa").then((mod) => mod.FaYoutube),
-  { ssr: false }
-);
+import { FaTwitter, FaTwitch, FaYoutube } from "react-icons/fa";
 
 const Blogprojects = () => {
   return (
     <div>
-      <div className="flex flex-wrap gap-2 justify-center items-center mt-10">
+      <div className="flex flex-wrap gap-2  justify-center items-center mt-10 ">
         {/* Blog Items */}
         {[
           {
@@ -55,7 +43,6 @@ const Blogprojects = () => {
                 alt={blog.src}
                 width={300}
                 height={60}
-                priority // helps with preloading
               />
               <p className={styles.blogboxdate}>{blog.date}</p>
               <p className={styles.blogboxdetials}>{blog.title}</p>
@@ -64,8 +51,8 @@ const Blogprojects = () => {
         ))}
       </div>
 
-      <div className="flex flex-wrap mt-4 justify-center items-center space-x-2">
-        <div className="flex flex-wrap bg-[#1a373d] p-10 rounded-md">
+      <div className="flex flex-wrap mt-4  justify-center items-center  space-x-2   ">
+        <div className=" flex flex-wrap bg-[#1a373d] p-10 rounded-md ">
           <div className="flex flex-wrap flex-col lg:flex-row items-center gap-4">
             <div className="flex items-center justify-center w-12 h-12 text-white rounded-full bg-gradient-to-r from-[#a42bc9] via-[#b338b1] to-[#f36bb8]">
               <svg
@@ -80,7 +67,7 @@ const Blogprojects = () => {
               </svg>
             </div>
             <div>
-              <span className="text-lg md:text-2xl font-bold">
+              <span className="flex flex-wrap text-lg md:text-2xl font-bold">
                 Subscribe to our newsletter
               </span>
               <div className={styles.textsecondary}>
@@ -104,16 +91,16 @@ const Blogprojects = () => {
             </form>
           </div>
         </div>
-        <div className="w-3/10 bg-[#1a373d] mt-2 px-10 pb-2 justify-center items-center rounded-md">
-          <div className="flex flex-wrap gap-5 pb-10 mt-10">
+        <div className="w-3/10  bg-[#1a373d]  mt-2 px-10 pb-2 justify-center items-center  rounded-md  ">
+          <div className="flex flex-wrap gap-5 pb-10 Smd:p-8 mt-10  ">
             <div>
-              <FaTwitch className="text-white bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
+              <FaTwitch className="text-white justify-center items-center bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
             </div>
             <div>
-              <FaTwitter className="text-white bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
+              <FaTwitter className="text-white justify-center items-center bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
             </div>
             <div>
-              <FaYoutube className="text-white bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
+              <FaYoutube className="text-white justify-center items-center bg-slate-300 bg-opacity-40 w-10 h-10 p-2 rounded-full" />
             </div>
           </div>
         </div>
